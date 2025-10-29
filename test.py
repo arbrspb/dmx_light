@@ -11,3 +11,4 @@ note_off = array.array('B', [0x80, 60, 0])   # Note Off
 midi_out.sendMessage(note_on)
 time.sleep(1)
 midi_out.sendMessage(note_off)
+# test проверка

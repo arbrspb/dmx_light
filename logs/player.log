@@ -1,83 +1,9 @@
-2025-10-29 01:46:58,511 [ERROR] Error sending Note On: argument 1 must be of type MidiMessage or a number.
-2025-10-29 01:49:33,639 [ERROR] Error sending Note Off: argument 1 must be of type MidiMessage or a number.
-2025-10-29 01:59:23,878 [ERROR] Error sending Note On: argument 1 must be of type MidiMessage or a number.
-2025-10-29 01:59:31,834 [ERROR] Error sending Note Off: argument 1 must be of type MidiMessage or a number.
-2025-10-29 02:01:16,635 [ERROR] Error sending Note Off: argument 1 must be of type MidiMessage or a number.
-2025-10-29 02:01:19,342 [ERROR] Error sending Note On: argument 1 must be of type MidiMessage or a number.
-2025-10-29 02:01:20,158 [ERROR] Error sending Note Off: argument 1 must be of type MidiMessage or a number.
-2025-10-29 02:01:45,879 [ERROR] Error sending Note On: argument 1 must be of type MidiMessage or a number.
-2025-10-29 02:01:49,146 [ERROR] Error sending Note Off: argument 1 must be of type MidiMessage or a number.
-2025-10-29 02:05:45,086 [ERROR] Error sending MIDI message [144, 60, 127]: argument 1 must be of type MidiMessage or a number.
-Traceback (most recent call last):
-  File "D:\WinUsers\ARTUR\Desktop\Программирование\dmx_light\realtime_audio.py", line 119, in _send_midi_bytes
-    self.midi_out.sendMessage(msg_bytes)
-rtmidi.Error: argument 1 must be of type MidiMessage or a number.
-2025-10-29 02:05:50,001 [ERROR] Error sending MIDI message [128, 60, 0]: argument 1 must be of type MidiMessage or a number.
-Traceback (most recent call last):
-  File "D:\WinUsers\ARTUR\Desktop\Программирование\dmx_light\realtime_audio.py", line 119, in _send_midi_bytes
-    self.midi_out.sendMessage(msg_bytes)
-rtmidi.Error: argument 1 must be of type MidiMessage or a number.
-2025-10-29 02:07:29,521 [DEBUG] sendMessage(list) failed: argument 1 must be of type MidiMessage or a number.
-Traceback (most recent call last):
-  File "D:\WinUsers\ARTUR\Desktop\Программирование\dmx_light\realtime_audio.py", line 135, in _send_midi_bytes
-    self.midi_out.sendMessage(msg_bytes)
-rtmidi.Error: argument 1 must be of type MidiMessage or a number.
-2025-10-29 02:07:29,521 [DEBUG] sendMessage(MidiMessage) failed: <class 'rtmidi.MidiMessage'> returned NULL without setting an exception
-Traceback (most recent call last):
-  File "D:\WinUsers\ARTUR\Desktop\Программирование\dmx_light\realtime_audio.py", line 135, in _send_midi_bytes
-    self.midi_out.sendMessage(msg_bytes)
-rtmidi.Error: argument 1 must be of type MidiMessage or a number.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "D:\WinUsers\ARTUR\Desktop\Программирование\dmx_light\realtime_audio.py", line 145, in _send_midi_bytes
-    msgobj = MidiMessageCls(msg_bytes)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^
-SystemError: <class 'rtmidi.MidiMessage'> returned NULL without setting an exception
-2025-10-29 02:07:29,521 [DEBUG] sendMessage(bytes) failed: argument 1 must be of type MidiMessage or a number.
-Traceback (most recent call last):
-  File "D:\WinUsers\ARTUR\Desktop\Программирование\dmx_light\realtime_audio.py", line 135, in _send_midi_bytes
-    self.midi_out.sendMessage(msg_bytes)
-rtmidi.Error: argument 1 must be of type MidiMessage or a number.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "D:\WinUsers\ARTUR\Desktop\Программирование\dmx_light\realtime_audio.py", line 156, in _send_midi_bytes
-    self.midi_out.sendMessage(bytes(msg_bytes))
-rtmidi.Error: argument 1 must be of type MidiMessage or a number.
-2025-10-29 02:07:29,522 [DEBUG] mido not available for fallback
-2025-10-29 02:07:29,522 [ERROR] Unable to send MIDI message [144, 60, 127]. midi_out type=<class 'midi.RtMidiOut'>, methods=['LINUX_ALSA', 'MACOSX_CORE', 'RTMIDI_DUMMY', 'UNIX_JACK', 'UNSPECIFIED', 'WINDOWS_MM', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'closePort', 'getPortCount', 'getPortName', 'isPortOpen', 'openPort', 'openVirtualPort', 'sendMessage']
-2025-10-29 02:07:39,710 [DEBUG] sendMessage(list) failed: argument 1 must be of type MidiMessage or a number.
-Traceback (most recent call last):
-  File "D:\WinUsers\ARTUR\Desktop\Программирование\dmx_light\realtime_audio.py", line 135, in _send_midi_bytes
-    self.midi_out.sendMessage(msg_bytes)
-rtmidi.Error: argument 1 must be of type MidiMessage or a number.
-2025-10-29 02:07:39,710 [DEBUG] sendMessage(MidiMessage) failed: <class 'rtmidi.MidiMessage'> returned NULL without setting an exception
-Traceback (most recent call last):
-  File "D:\WinUsers\ARTUR\Desktop\Программирование\dmx_light\realtime_audio.py", line 135, in _send_midi_bytes
-    self.midi_out.sendMessage(msg_bytes)
-rtmidi.Error: argument 1 must be of type MidiMessage or a number.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "D:\WinUsers\ARTUR\Desktop\Программирование\dmx_light\realtime_audio.py", line 145, in _send_midi_bytes
-    msgobj = MidiMessageCls(msg_bytes)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^
-SystemError: <class 'rtmidi.MidiMessage'> returned NULL without setting an exception
-2025-10-29 02:07:39,710 [DEBUG] sendMessage(bytes) failed: argument 1 must be of type MidiMessage or a number.
-Traceback (most recent call last):
-  File "D:\WinUsers\ARTUR\Desktop\Программирование\dmx_light\realtime_audio.py", line 135, in _send_midi_bytes
-    self.midi_out.sendMessage(msg_bytes)
-rtmidi.Error: argument 1 must be of type MidiMessage or a number.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "D:\WinUsers\ARTUR\Desktop\Программирование\dmx_light\realtime_audio.py", line 156, in _send_midi_bytes
-    self.midi_out.sendMessage(bytes(msg_bytes))
-rtmidi.Error: argument 1 must be of type MidiMessage or a number.
-2025-10-29 02:07:39,711 [DEBUG] mido not available for fallback
-2025-10-29 02:07:39,711 [ERROR] Unable to send MIDI message [128, 60, 0]. midi_out type=<class 'midi.RtMidiOut'>, methods=['LINUX_ALSA', 'MACOSX_CORE', 'RTMIDI_DUMMY', 'UNIX_JACK', 'UNSPECIFIED', 'WINDOWS_MM', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'closePort', 'getPortCount', 'getPortName', 'isPortOpen', 'openPort', 'openVirtualPort', 'sendMessage']
+2025-10-30 01:30:59,233 [INFO] [MIDI] opened port: loopMIDI Port 0
+2025-10-30 01:32:07,715 [INFO] [MIDI] closed
+2025-10-30 01:33:08,639 [INFO] [MIDI] opened port: loopMIDI Port 0
+2025-10-30 01:34:50,049 [INFO] [MIDI] closed
+2025-10-30 01:34:51,970 [INFO] [MIDI] opened port: loopMIDI Port 0
+2025-10-30 01:36:01,240 [INFO] [MIDI] closed
+2025-10-30 01:51:42,937 [INFO] [MIDI] opened port: loopMIDI Port 0
+2025-10-30 01:54:32,454 [INFO] [MIDI] opened port: loopMIDI Port 0
+2025-10-30 01:54:49,137 [INFO] [MIDI] opened port: loopMIDI Port 0

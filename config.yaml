@@ -1,0 +1,26 @@
+audio:
+  device_index: 1
+  samplerate: 44100
+  blocksize: 1024
+  channels: 1
+  calibration_seconds: 1.0
+  ema_alpha: 0.3
+
+logic:
+  dynamic_threshold: false
+  on_threshold: 0.00005
+  off_threshold: 0.00003
+  startup_grace_seconds: 0.5
+  min_on_seconds: 0.20
+  min_off_seconds: 0.40
+  silence_hold_seconds: 0.40
+
+midi:
+  output_port_name_contains: "loopMIDI"
+  channel: 1
+  velocity: 127
+
+  trigger_mode: "separate_notes"   # включение и выключение разными нотами
+  notes:
+    on: 60    # нота для “Запуск” (повесьте её в FreeStyler)
+    off: 61   # нота для “Остановка”

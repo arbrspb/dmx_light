@@ -1,5 +1,5 @@
 audio:
-  device_index: 1
+  device_index: 1          # 1-2 (QUAD-CAPTURE)
   samplerate: 44100
   blocksize: 1024
   channels: 1
@@ -20,7 +20,7 @@ midi:
   channel: 1
   velocity: 127
 
-  trigger_mode: "separate_notes"   # включение и выключение разными нотами
+  trigger_mode: "separate_notes"
   notes:
-    on: 60    # нота для “Запуск” (повесьте её в FreeStyler)
-    off: 61   # нота для “Остановка”
+    on: 60    # привяжите в FS к действию "Запуск" вашей сцены/программы
+    off: 61   # привяжите в FS к действию "Остановка"
